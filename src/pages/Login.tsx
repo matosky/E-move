@@ -33,7 +33,6 @@ export default function Login() {
       setIsloading(false)
       const { data } = loginResponse.response
       if (data.message) {
-        console.log(data.message)
         setError(data.message)
       }
       return;

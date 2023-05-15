@@ -2,6 +2,9 @@
 import { DriverType } from '../interfaces/apiTypes'
 import axios from './axios'
 
+
+
+
 export const signUpUser = async (data: any) => {
   try {
     const response = await axios.post('/users/register', JSON.stringify(data), {
@@ -23,6 +26,9 @@ export const verifyUser = async (id: string, token: string) => {
     return error.response
   }
 }
+
+
+
 
 export const loginUser = async (data: any) => {
   try {
